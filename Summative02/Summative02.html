@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 12/18/2025 updated for OneNote artifact creation, and to improve consistency for AI feedback system
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+    <!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+    <title>MIS202 Summative02</title>
+</head>
+
+
+
+<body class="container-fluid">
+
+    <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+
+        <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+        <!-- had to put assignment here, because it is used in the path calculation -->
+        <!-- <input  name="assignment" id="assignment" value="Formative00" type="hidden" > -->
+
+        <h1 class=" text-center">Written Communication</h1>
+
+        <h2 id="student-info" class="sr-only">Student Information</h2>
+        <!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+        <div class="row" aria-labelledby="student-info">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="FirstName" class="text-dark">First Name:</label>
+                    <input class="form-control"
+                        name="FirstName"
+                        id="FirstName"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        autocomplete="given-name"
+                        aria-label="First Name"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="LastName" class="text-dark">Last Name:</label>
+                    <input class="form-control"
+                        name="LastName"
+                        id="LastName"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        autocomplete="family-name"
+                        aria-label="Last Name"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="StarID" class="text-dark">StarID:</label>
+                    <input class="form-control"
+                        name="StarID"
+                        id="StarID"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        autocomplete="username"
+                        aria-label="StarID"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="email" class="text-dark">Email:</label>
+                    <input class="form-control"
+                        name="email"
+                        id="email"
+                        type="email"
+                        readonly
+                        aria-readonly="true"
+                        autocomplete="email"
+                        aria-label="Email"
+                        tabindex="0" />
+                </div>
+            </div>
+        </div>
+        <input name="pin" id="pin" type="hidden" aria-hidden="true" />
+
+        <h2 id="course-info" class="sr-only">Course Information</h2>
+        <div class="row" aria-labelledby="course-info">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Semester" class="text-dark">Semester:</label>
+                    <input class="form-control"
+                        name="Semester"
+                        id="Semester"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        aria-label="Semester"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Class" class="text-dark">Class:</label>
+                    <input class="form-control"
+                        name="Class"
+                        id="Class"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        aria-label="Class"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Section" class="text-dark">Section:</label>
+                    <input class="form-control"
+                        name="Section"
+                        id="Section"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        aria-label="Section"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="assignment" class="text-dark">Assignment:</label>
+                    <input class="form-control"
+                        name="assignment"
+                        id="assignment"
+                        type="text"
+                        readonly
+                        value="Summative02"
+                        aria-readonly="true"
+                        aria-label="Assignment"
+                        tabindex="0" />
+                </div>
+            </div>
+        </div>
+
+        <!-- -end-Student, class and assignment information-end -->
+
+
+
+
+
+        <div class="col-lg-12">
+            <br />
+            <input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit">
+            <br />
+        </div>
+
+        <div class="col-lg-12 h3 text-danger">
+            650 Points
+			<hr />
+        </div>
+
+        <!-- -start-objectives-start -->
+        <div class="col-lg-12"><a href="#Objectives" class="btn btn-info" data-toggle="collapse">Learning Objectives</a></div>
+        <div id="Objectives" class=" collapse in col-lg-12">
+
+            <!--Above this line similar except for Assignment number and title   -->
+
+            <p>These exercises provide experience with the Outlook Desktop client application to organize your work, and make more efficient use of your time.</p>
+            <p>After completing this assignment you will be able to use the Outlook Desktop client to:</p>
+
+            <ul>
+                <li>Create a meeting appointment</li>
+                <li>Add a signature block to emails</li>
+                <li>Create and attach a vcard to your emails</li>
+                <li>Create a recurring appointment</li>
+                <li>Understand how businesses can work together more effectively</li>
+                <li>Subscribe to a calendar feed (.ics) from D2L</li>
+                <li>Create and submit a professional documentation artifact that combines text, screenshots, and system output.  </li>
+                <li>Apply written communication standards in professional digital tools.  </li>
+            </ul>
+            <hr />
+        </div>
+        <!-- -end-objectives-end -->
+
+
+
+        <div class="col-lg-12"><a href="#Overview" class="btn btn-info" data-toggle="collapse">Assignment Overview</a></div>
+
+        <div id="Overview" class="collapse in  col-lg-12">
+            The purpose of this assignment is to introduce you to the power of personal information management programs. 
+            The Microsoft Outlook Desktop client (not the cloud version) will be the application used. 
+            Modern businesses depend on email, which Outlook can handle.
+            There are many other features and add-ons that can be combined with Outlook to make the communication process more efficient. 
+            Some of these are: 
+        <ul>
+            <li>Using calendaring to schedule your day, meetings and resources</li>
+            <li>Adding the Linked-In toolbar to simplify looking up information on your connections while using Outlook</li>
+            <li>Using Microsoft Lync/Skype for Business as an Instant Messaging client that displays your status based on your Outlook calendar</li>
+        </ul>
+
+            <p>This assignment will cover several basic Outlook features, you are encouraged to explore on your own to find additional features that will make you more productive.</p>
+            <p>
+                Make sure that Outlook is properly setup on your computer before proceeding.<br />
+                If necessary, contact Tech Support in Somsen 207 for assistance.
+            </p>
+            <hr />
+
+        </div>
+
+        <hr>
+        <hr>
+
+        <h2>Record ScreenShots Using Snipping Tool and OneNote</h2>
+
+        <p>
+            OneNote is used to organize evidence before submission, mirroring how professionals collect artifacts for audits, reporting, and troubleshooting.
+        </p>
+
+        <ol>
+            <li>Open <strong>Microsoft OneNote</strong> to the proper course section</li>
+            <li>Create a new page, name it <code><span class="SummativeID"></span></code></li>
+            <li>Use the <strong>Snipping Tool</strong> to take required screenshots </li>
+            <li>Select the <strong>OneNote </strong>page, press <code>Ctrl + V</code> to paste the screenshot into OneNote</li>
+            <li>Label each screenshot clearly (e.g., "ScreenShot &hyphen; Ex10 &hyphen; select query showing all records from tblParks")</li>
+            <li>Once all images are added, go to <strong>File &gt; Print</strong> and choose <strong>Microsoft Print to PDF</strong>.</li>
+
+            <li>Upload the PDF file to the D2L Assignment folder: <code><span class="SummativeID"></span></code></li>
+        </ol>
+        <hr>
+        <hr>
+
+
+        <div class=" col-lg-12"><a href="#Exercise01" class="btn btn-info" data-toggle="collapse">Exercise 1-Simple Appointment</a></div>
+
+        <div id="Exercise01" class="collapse in  col-lg-12">
+            <p>
+                Review this LinkedIn Learning video on creating an Outlook Appointment "<a href="https://www.linkedin.com/learning-admin/content/courses/432365/videos/460681" class="bg-info text-white" target="_blank">Outlook Appointment</a>"
+				<br>
+                Hint: if you need help, go to LinkedIn Learning and search for &#39;Create an appointment '.
+				<br />
+                There is a very good 45m video <a href="https://www.linkedin.com/learning-admin/content/courses/748564" class="bg-info text-white" target="_blank">Learn Outlook 2019</a>, and more.<br />
+            </p>
+
+
+            <p>Your task is to create an Outlook appointment for yourself to set aside time to study for this course.</p>
+            <p>
+                (50) 1. How can this task be accomplished using the Outlook calendar?
+				<br>
+            </p>
+
+            <!-- Enter your answer in the VALUE field below   GROK -->
+            <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="Enter your brief answer here" type="text">
+            <br>
+
+            <p>
+                (50) 2. Use the Snipping Tool to make a screenshot of the item you created in the Outlook calendar.
+				<br />
+
+                <!--  PgP 2/4/2018 create path using constants and current document assignment -->
+                Save the screenshot  in your OneNote page.<br>
+                Below each screenshot, add one sentence explaining what the screenshot verifies.
+				
+               <br />
+
+
+            </p>
+
+
+        </div>
+
+        <div class="col-lg-12 text-danger">
+            <h2>ScreenShot Ex1</h2>
+            <hr />
+        </div>
+
+
+
+        <div class=" col-lg-12"><a href="#Exercise02" class="btn btn-info" data-toggle="collapse">Exercise 2-Signature Block</a></div>
+
+        <div id="Exercise02" class="collapse in  col-lg-12">
+            <p>
+                Review this LinkedIn Learning video on creating an Outlook Appointment "<a href="https://www.linkedin.com/learning-admin/content/courses/2807099/videos/2230562" class="bg-info text-white" target="_blank">Outlook Signature</a>"
+				<br>
+                <br>
+                Hint: if you need help, go to LinkedIn Learning and search for 'Outlook 2019 basics&#39;.
+                <br>
+            </p>
+            <p>
+            </p>
+
+            <p>Your task is to create an Outlook signature block that contains a Business Card for your emails.</p>
+            <p>
+                Make a screenshot of an email containing a signature block and a Business Card in Outlook.
+				<br>
+                It will look something like this:<br>
+                <img src="images/EmailSignature.jpg" class="img-responsive" alt="Signature Block with Business Card">
+                <br>
+                <br>
+                (50) 3. What must you create first in Outlook before you can create a Business Card?
+				<br>
+            </p>
+
+            <!-- Enter your answer in the VALUE field below   GROK -->
+            <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="Enter your brief answer here" type="text">
+            <br />
+
+            <!--  PgP 2/4/2018 create path using constants and current document assignment -->
+            (50) 4. Save the screenshot  in your OneNote page.<br />
+
+            Below each screenshot, add one sentence explaining what the screenshot verifies.
+			<br />
+
+        </div>
+
+
+        <div class="col-lg-12 text-danger">
+            <h2>ScreenShot Ex2</h2>
+            <hr />
+        </div>
+
+
+
+        <div class="col-lg-12"><a href="#Exercise03" class="btn btn-info" data-toggle="collapse">Exercise 3-Test Email</a></div>
+
+        <div id="Exercise03" class="collapse in  col-lg-12">
+            <p>Send a test email to yourself.</p>
+            <p>
+                (50) 5. Briefly describe the reason to send a test email to yourself.<br>
+                Hint: Answer the question 'what does it mean if I do not receive the test email?'
+            </p>
+
+            <!-- Enter your answer in the VALUE field below   GROK -->
+            <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text">
+            <br>
+            <hr />
+        </div>
+
+
+
+        <div class="col-lg-12"><a href="#Exercise04" class="btn btn-info" data-toggle="collapse">Exercise 4-Spelling &amp; Grammar</a></div>
+
+
+        <div id="Exercise04" class="collapse in  col-lg-12">
+            <p>Consider the impact on your professional reputation of incorrect spelling and poor grammar.</p>
+            <p>
+                (50) 6. Briefly explain why it is a good idea to review, spell check and grammar check all emails before you press Send.<br>
+                Include in your answer a potential consequence of not doing so.
+            </p>
+
+            <!-- Enter your answer in the VALUE field below   GROK -->
+            <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text">
+            <br>
+            <hr />
+        </div>
+
+
+
+
+        <div class="col-lg-12"><a href="#Exercise05" class="btn btn-info" data-toggle="collapse">Exercise 5-Recurring Appointment</a></div>
+
+        <div id="Exercise05" class="collapse in  col-lg-12">
+            <p>
+                Use Outlook to create a recurring appointment with the following settings:<br>
+            </p>
+            <ul>
+                <li>Subject: MIS202 class meeting </li>
+                <li>Location: Somsen 301 </li>
+                <li>Start time: use the start time for your section</li>
+                <li>End time: use the end time for your section</li>
+                <li>Recurrence pattern: Weekly, every 1 week on Tuesday and Thursdays</li>
+                <li>Range of recurrence: end by last day of class</li>
+            </ul>
+            <p></p>
+
+            <p>(50) 7. Briefly describe the value of creating recurring appointments.</p>
+
+            <!-- Enter your answer in the VALUE field below   GROK -->
+            <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text">
+            <br>
+
+            <br />
+            <p>
+                (50) 8. Make a screenshot of your recurring appointment settings from the Outlook dialog box.<br>
+                <!--  PgP 2/4/2018 create path using constants and current document assignment -->
+                Save the screenshot  in your OneNote page.<br />
+                Below each screenshot, add one sentence explaining what the screenshot verifies.
+
+
+            </p>
+
+
+        </div>
+
+        <div class="col-lg-12 text-danger">
+            <h2>ScreenShot Ex5</h2>
+            <hr />
+        </div>
+
+
+        <h3>
+            Exercise 6 suspended until D2L calendar feeds are restored
+            </h3>
+
+        <!--  12/31/2025 PgP D2L calendar feeds not working, so exercise 6 cannot be completed at this time
+
+
+        <div class="col-lg-12">
+            <a href="#Exercise06" class="btn btn-info" data-toggle="collapse">Exercise 6-Calendar Feeds</a>
+        </div>
+
+        <div id="Exercise06" class="collapse in  col-lg-12">
+            <p>
+                In this exercise, please read all of these instructions first.<br>
+                You are going to create a calendar feed from D2L for this course, and install this feed into Outlook so that you know all the assignment due dates for this course.<br>
+                Using your browser, please login to D2L and find this course.
+            </p>
+
+            <p>
+                If you encounter issues, document what you observe and ask for assistance—working with shared systems often requires troubleshooting.
+
+            </p>
+            <ol>
+                <li>Click on Calendar, then Settings, then make sure 'Enable Calendar Feeds' is checked
+            <br>
+                    <br>
+                    <img src="images/EnableCalendarFeeds.png" class="img-fluid img-responsive img-rounded" alt="enable calendar feeds"><br />
+                </li>
+                <li>On the home page click the inverted triangle to the right of 'Calendar' and select 'Subscribe'<br />
+                    <img src="images/D2LCalendarFeed.jpg" class="img-fluid img-responsive img-rounded" alt="D2L subscribe to calendar feed">
+                    <br />
+                </li>
+                <li>Select this course from the drop-down list. Follow the instructions to place the URL into Outlook.  This means copy the url presented in the dialog box.<br />
+
+                    <img src="images/CalendarSubscriptionURL.png" class="img-fluid img-responsive img-rounded" alt="calendar feed url">
+                    <br />
+                </li>
+                <li>Open Outlook Desktop, 
+                            click the &#39;Calendar&#39; icon in the left column to display your Outlook calendar.<br />
+                    From the 
+                            Ribbon &#39;Manage Calendars&#39; section, choose &#39;Add Calendar&#39; File&gt;Account Settings&gt;Account Settings...&nbsp;&nbsp; When the dialog box appears choose the &quot;Internet Calendars&quot; tab, click &quot;New...&quot;&nbsp; Paste the D2L calendar feed url, click &quot;Add&quot;, use the course name as the folder name, click OK, then click close.
+                <br />
+                    <a href="Images/OutlookAddCalendar.PNG" class="img-responsive img-rounded" target="popup" onclick="window.open('Images/OutlookAddCalendar.PNG', 'popup'); return false;">
+                        <img src="Images/OutlookAddCalendar.PNG" alt=" add calendar" class="img-responsive" width="500" /></a><br />
+
+                    <br />
+                    <br />
+
+
+                </li>
+            </ol>
+            <p></p>
+
+            <p>
+                (100) 9. Calendar Feeds<br>
+                When these tasks are completed paste your D2L calendar feed url in the text box below.<br>
+
+                <!-- Enter your answer in the VALUE field below   GROK -->
+
+        <!--
+                <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="Enter your D2L calendar feed url here" type="text">
+                <br>
+            </p>
+
+            <p>
+                (50) 10. Calendar Feeds<br>
+                Briefly explain how shared calendars can improve coordination on a team or in an organization.<br>
+
+            -->
+
+                <!-- Enter your answer in the VALUE field below   GROK -->
+
+        <!--
+                <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="improvement: " type="text">
+                <br>
+            </p>
+
+            <hr />
+
+        </div>
+
+        -->
+
+        <!--  From here to end difference question numbers and Summative numbering for PDF of file uploaded to D2L    -->
+
+
+        <div class="col-lg-12"><a href="#ExercisePDF" class="btn btn-info" data-toggle="collapse">Exercise-PDF File Creation</a></div>
+
+        <div id="ExercisePDF" class="collapse in  col-lg-12">
+
+            <p>You will produce two PDFs: a WebPage.pdf (the printed webpage) and a final &lt;SummativeID&gt;.pdf (your submission artifact).</p>
+
+            <p>
+                Use a web browser to verify that you have published your website to https://classes.winona.edu/...
+				<br />
+                Check that your name, StarID, email, class, semester, section and all of your answers are correct and visible.
+				<br />
+                From the menu choose File&gt;Print... and using &quot;Microsoft Print to PDF&quot; save a copy of this assignment as a .pdf file in your   ' 
+                  <code><span id="Path4"></span></code>
+                ' folder.<br />
+            </p>
+            <br />
+
+            <p>
+                (50) 11. Save your file 'WebPage.pdf' to the ' 
+                  <code><span id="Path5"></span></code>
+                ' folder.<br />
+
+
+            </p>
+
+            <div class="text-danger">
+                <h2>WebPage.pdf</h2>
+                <hr />
+            </div>
+
+            <ol>
+                <li>Open File Explorer and navigate to your  '
+                
+				<code><span id="Path14"></span></code>
+                    ' folder.</li>
+
+                <li>Drag the  &#39; WebPage.pdf &#39; file into your OneNote section and page for this assignment, choosing &#39; Insert Printout &#39; from the pop-up menu
+                </li>
+
+                <li>From the OneNote menu choose File &gt; Print &gt; Print to save this file containing your screenshots and this completed webpage as &#39;<strong><span class="SummativeID"></span>.pdf</strong>&#39; in ' 
+                
+				<code><span id="Path9"></span></code>
+                    ' folder.<br />
+
+                </li>
+
+                <li><strong>(100)</strong> 12. Upload your completed '<span class="SummativeID"></span>' file &hyphen; containing your screenshots and the webpage.pdf files &hyphen;  to the D2L '<span class="SummativeID"></span>' Assignment folder.</li>
+
+            </ol>
+
+
+
+
+
+            <div class="text-danger">
+                <h2><span class="SummativeID"></span>.pdf</h2>
+            </div>
+            <hr />
+
+        </div>
+
+
+
+
+        <div class="col-lg-12"><a href="#ExerciseAssignmentSubmission" class="btn btn-info" data-toggle="collapse">Exercise-Assignment Submission</a></div>
+
+        <div id="ExerciseAssignmentSubmission" class="collapse in  col-lg-12">
+
+            <p>These steps ensure your written work can be reviewed and verified.</p>
+            <ol>
+                <li>Use a browser to view your completed and published website at: https://classes.winona.edu/... 
+                </li>
+                <li>Ensure that you have correctly linked this assignment on your home page.
+                    <br>
+                    Note that your screenshots do not have to be completed to perform this exercise.
+                </li>
+                <li><strong>(50)</strong> 13. Home Page Hyperlink<br />
+                    Check and verify that this assignment is hyperlinked on your home page.</li>
+
+                <li><strong>(50)</strong> 14. Assignment submission<br />
+                    Press the Submit button at the top or bottom of this page.
+                Read and follow instructions on the confirmation page.&nbsp; Correct any errors.
+                </li>
+            </ol>
+
+            <br />
+
+        </div>
+
+        <hr />
+
+
+
+        <div class="col-lg-12">
+            <br />
+            <input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit">
+            <br />
+        </div>
+
+
+    </form>
+
+    <!-- PgP 5/31/2025 place js code at end to prevent race conditions -->
+
+    <!-- Creative Commons License Info -->
+    <footer>
+        <div id="licenseInfo" class="col-lg-12 text-muted"></div>
+        <div id="footerText" class="col-lg-12 text-muted"></div>
+    </footer>
+
+    <!-- ========== Script Includes (Order is Critical) ========== -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+    <script src="../../ReadOnly/bootstrap.js"></script>
+    <script src="../studentConstants.js"></script>
+    <script src="../../ReadOnly/courseConstants.js"></script>
+    <script src="../../ReadOnly/domForms.js"></script>
+
+</body>
+</html>

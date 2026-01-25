@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+    <!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+    <title>MIS202 Formative03</title>
+</head>
+
+<body class="container-fluid">
+
+    <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+
+        <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+        <!-- had to put assignment here, because it is used in the path calculation -->
+        <!-- <input  name="assignment" id="assignment" value="Formative00" type="hidden" > -->
+
+        <h1 class=" text-center">Word-Formative Preparation for Summative Assignment </h1>
+
+        <h2 id="student-info" class="sr-only">Student Information</h2>
+        <!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+        <div class="row" aria-labelledby="student-info">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="FirstName" class="text-dark">First Name:</label>
+                    <input class="form-control"
+                        name="FirstName"
+                        id="FirstName"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        autocomplete="given-name"
+                        aria-label="First Name"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="LastName" class="text-dark">Last Name:</label>
+                    <input class="form-control"
+                        name="LastName"
+                        id="LastName"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        autocomplete="family-name"
+                        aria-label="Last Name"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="StarID" class="text-dark">StarID:</label>
+                    <input class="form-control"
+                        name="StarID"
+                        id="StarID"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        autocomplete="username"
+                        aria-label="StarID"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="email" class="text-dark">Email:</label>
+                    <input class="form-control"
+                        name="email"
+                        id="email"
+                        type="email"
+                        readonly
+                        aria-readonly="true"
+                        autocomplete="email"
+                        aria-label="Email"
+                        tabindex="0" />
+                </div>
+            </div>
+        </div>
+        <input name="pin" id="pin" type="hidden" aria-hidden="true" />
+
+        <h2 id="course-info" class="sr-only">Course Information</h2>
+        <div class="row" aria-labelledby="course-info">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Semester" class="text-dark">Semester:</label>
+                    <input class="form-control"
+                        name="Semester"
+                        id="Semester"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        aria-label="Semester"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Class" class="text-dark">Class:</label>
+                    <input class="form-control"
+                        name="Class"
+                        id="Class"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        aria-label="Class"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Section" class="text-dark">Section:</label>
+                    <input class="form-control"
+                        name="Section"
+                        id="Section"
+                        type="text"
+                        readonly
+                        aria-readonly="true"
+                        aria-label="Section"
+                        tabindex="0" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="assignment" class="text-dark">Assignment:</label>
+                    <input class="form-control"
+                        name="assignment"
+                        id="assignment"
+                        type="text"
+                        readonly
+                        value="Formative03"
+                        aria-readonly="true"
+                        aria-label="Assignment"
+                        tabindex="0" />
+                </div>
+            </div>
+        </div>
+
+        <!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br />
+            <input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit" />
+            <br />
+        </div>
+
+        <div class="col-lg-12 h3 text-danger">
+            80 Points
+            <hr />
+        </div>
+
+
+        <!-- -start-Purpose-start -->
+
+        <div class="col-lg-12">
+            <a href="#Purpose" class="btn btn-info" data-toggle="collapse">Purpose and Learning Focus</a>
+        </div>
+
+        <div id="Purpose" class="collapse in col-lg-12">
+
+            <!--Above this line similar except for Assignment number and title-->
+
+            <div class="panel-body">
+                <p>
+                    This formative assignment prepares you for the <strong>Summative03 Written Communication assignment</strong>
+                    by helping you understand <strong>how Microsoft Word is used in professional settings</strong>, not just how individual features work.
+                </p>
+
+                <p>You will explore core Word tools and reflect on:</p>
+
+                <ul>
+                    <li>how document structure and formatting influence clarity and tone,</li>
+                    <li>how professional formatting choices affect credibility and reader perception,</li>
+                    <li>and how visible document features can later serve as evidence of effective written communication.</li>
+                </ul>
+
+                <p>
+                    This is a <strong>low-stakes, preparatory assignment</strong>. You are expected to experiment, observe,
+            and think critically-not produce a polished final document. Grading emphasizes
+            <strong>conceptual understanding and reflection</strong>, not technical perfection.
+                </p>
+
+                <p>After completing this assignment, you should be able to:</p>
+
+                <ul>
+                    <li>identify key Microsoft Word features used in professional business documents,</li>
+                    <li>explain how text, paragraph, and page formatting influence clarity and tone,</li>
+                    <li>recognize when and why professionals use styles, tables of contents, and proofing tools,</li>
+                    <li>describe how collaboration and revision workflows support written communication,</li>
+                    <li>and prepare to apply Word formatting and revision tools in a polished business document.</li>
+                </ul>
+
+                <p>
+                    You are not expected to master every Word feature. Focus on understanding
+            <strong>why and when professionals make specific formatting and revision choices</strong>.
+            <br />
+                    Copilot features may not be available in your environment; understanding the
+            <em>concept</em> is sufficient.
+                </p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class=" col-lg-12"><a href="#Exercise01" class="btn btn-info" data-toggle="collapse">Exercise 1-Concepts</a></div>
+
+        <div id="Exercise01" class="collapse in">
+            <div class="col-lg-12">
+                <p>
+                    ref: MIS202 LinkedIn Learning
+                </p>
+            </div>
+
+
+
+            <div class="col-lg-12">
+                <p>
+                    For this  Exercise listen to the LinkedIn Learning course: &#39;<a href="https://www.linkedin.com/checkpoint/enterprise/login/41915348?pathWildcard=41915348&amp;application=learning&amp;redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Flearning%2Fcollections%2Fenterprise%2F1%7EAAAAAAJ_k9Q%3D857391%3Fu%3D41915348" class="bg-info text-white" target="_blank">Word Essential Training</a> &#39;
+                    <br />
+                    Answer the following questions based on the LinkedIn Learning course.<br>
+                    Your answers should focus on concepts and professional reasoning, not step-by-step instructions.
+                </p>
+            </div>
+
+
+
+
+            <div class="col-lg-12 ">
+
+                <p>
+                    (10) 1. Why is Microsoft Word still widely used in professional and academic environments, even though many tools can create documents?<br>
+                    Focus on reliability, standardization, and expectations in business settings.<br />
+                </p>
+
+                <p>
+
+                    <!-- Enter your answer in the VALUE field below   GROK -->
+                    <input name="q1" type="text" id="q1" size="150" maxlength="250" class="form-control" value="widely used:" />
+                    <br />
+                </p>
+                <hr />
+
+            </div>
+
+            <hr />
+
+
+
+            <div>
+                <div class="col-lg-12 ">
+
+                    <p>
+                        (10) 2. How do document structure and formatting choices (headings, spacing, alignment) influence how a reader understands and evaluates written information?<br>
+                        Think from the perspective of a busy manager or instructor.<br />
+                        <!-- Enter your answer in the VALUE field below   GROK -->
+                        <input name="q2" type="text" id="q2" size="150" maxlength="250" class="form-control" value="improves:" />
+                        <br />
+                    </p>
+                    <hr />
+                </div>
+
+                <div class="col-lg-12 ">
+                    <p>
+                        (10) 3. How can poor formatting or inconsistent styles affect how a reader perceives the author's professionalism or credibility, even if the content is correct?<br />
+                        <!-- Enter your answer in the VALUE field below   GROK -->
+                        <input name="q3" type="text" id="q3" size="150" maxlength="250" class="form-control" value="feature:" />
+                        <br />
+                    </p>
+                    <hr />
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-12 ">
+                <p>
+                    (10) 4. If an instructor could only see the final document, what visible features would signal that the author understands professional document preparation?<br>
+                    Do not list steps-describe observable outcomes.<br />
+                    <!-- Enter your answer in the VALUE field below   GROK -->
+                    <input name="q4" type="text" id="q4" size="150" maxlength="250" class="form-control" value="explain:" />
+                    <br />
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-12 ">
+
+                <hr />
+
+                <h3>Preparing for Summative03</h3>
+
+                <p>
+                    In the upcoming Summative assignment, you will be required to <strong>create and document</strong> several Word features.<br>
+                    In the Summative assignment, you will organize this evidence using OneNote before submission.
+                </p>
+                <p>
+                </p>
+
+
+
+
+
+                <p>
+                    (10) 5. How does understanding Word's formatting and revision tools prepare you to produce stronger written work in later assignments or professional settings?:<br />
+                    <!-- Enter your answer in the VALUE field below   GROK -->
+                    <input name="q5" type="text" id="q5" size="150" maxlength="250" class="form-control" value="evidence:" />
+                    <br />
+                </p>
+
+
+                <hr />
+            </div>
+        </div>
+
+
+
+
+        <!--  From here to end difference question numbers and Summative numbering for PDF of file uploaded to D2L    -->
+
+
+        <div class="col-lg-12"><a href="#ExerciseAssignmentSubmission" class="btn btn-info" data-toggle="collapse">Exercise-Assignment Submission</a></div>
+
+        <div id="ExerciseAssignmentSubmission" class="collapse in  col-lg-12">
+            <p>
+                Use a browser to view your completed and published website at: https://classes.winona.edu/...     
+				<br />
+                Ensure that you have linked this assignment on your home page.
+            </p>
+
+            <p>
+                Upon completing the LinkedIn Learning course, download the Certificate of Completion.
+                <br>
+                (10) 6. <strong>Upload a PDF copy to the D2L Formative03 folder as verification, and add it to your LinkedIn profile.</strong>
+                <br>
+                The Certificate of Completion verifies engagement and supports your professional profile.<br>
+                It is not graded for content.
+                <br>
+
+                <br>
+            </p>
+
+            (10) 7. Home Page Hyperlink<br />
+            Check and verify that this assignment is hyperlinked on your home page.<br />
+            <br />
+
+            (10) 8. Assignment submission<br />
+            Press the Submit button at the top or bottom of this page.
+                Read and follow instructions on the confirmation page.&nbsp; Correct any errors.
+        </div>
+        <hr />
+
+
+
+
+
+        <div class="col-lg-12">
+            <br />
+            <input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit" />
+            <br />
+        </div>
+    </form>
+
+
+
+    <!-- PgP 5/31/2025 place js code at end to prevent race conditions -->
+
+    <!-- Creative Commons License Info -->
+    <footer>
+        <div id="licenseInfo" class="col-lg-12 text-muted"></div>
+        <div id="footerText" class="col-lg-12 text-muted"></div>
+    </footer>
+
+    <!-- ========== Script Includes (Order is Critical) ========== -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+    <script src="../../ReadOnly/bootstrap.js"></script>
+    <script src="../studentConstants.js"></script>
+    <script src="../../ReadOnly/courseConstants.js"></script>
+    <script src="../../ReadOnly/domForms.js"></script>
+
+</body>
+</html>
